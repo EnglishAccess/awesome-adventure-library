@@ -66,5 +66,5 @@ create policy "Admins can view admin list" on admins for select using ( exists (
 -- 5. Link Admin User
 insert into admins (id, email)
 select id, email from auth.users
-where email = 'satoru@english-access.jp'
+where email = 'YOUR_ADMIN_EMAIL' -- Replace with your actual admin email
 on conflict (id) do nothing;

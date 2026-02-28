@@ -13,5 +13,5 @@ create policy "Admins can check themselves"
 -- 3. 念のため管理者ユーザーが消えていないか確認して登録
 insert into admins (id, email)
 select id, email from auth.users
-where email = 'satoru@english-access.jp'
+where email = 'YOUR_ADMIN_EMAIL' -- Replace with your actual admin email
 on conflict (id) do nothing;
