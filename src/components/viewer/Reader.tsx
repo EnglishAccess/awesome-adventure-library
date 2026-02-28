@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { Book } from '@/types';
 import { pdfjs } from 'react-pdf';
-import useMediaQuery from '@/hooks/useMediaQuery'; // We will need to create this hook or implement logic here
+
 import FlipReader from './FlipReader';
 import ScrollReader from './ScrollReader';
 import Link from 'next/link';
